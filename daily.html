@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daily Scripts</title>
+    </head>
+    <body>
+        <h1>Daily Script Runner</h1>
+        <menu style="display: flex;
+        padding: 0;
+        justify-content: space-between;
+        width: 29vw;
+        flex-wrap: wrap;">
+            <button onclick="location.reload()" style="margin-bottom: 1.2rem">Click to rerun scripts</button>
+            <button onclick="clearTabs(); location.reload()" style="margin-bottom: 1.2rem">Clear All Tabs</button>
+            <label>Add New Tab:</label>
+            <input>
+                <button onclick="addNewTab(document.querySelector('input').value)">Add Tab</button>
+            </input>
+        </menu>
+        <h2>Sites to be loaded:</h2>
+        <script type="text/javascript" src="./daily.js"></script>
+    </body>
+</html>
